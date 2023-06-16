@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 /**
  * main - Program prints each letter of alphabet
  * Description: Program uses a for loop
@@ -7,11 +8,12 @@
  */
 int main(void)
 {
-	char i;
+	char a = 'a';
+	int i;
 
-	for (i = 'a'; i <= 'z'; i++;)
+	for (i = 0; i <= 26; i++)
 	{
-		putchar('i');
+		putchar(a);
 		putchar('\n');
 	}
 	return (0);
