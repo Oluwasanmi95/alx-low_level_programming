@@ -3,11 +3,9 @@
 #include <stdio.h>
 
 /**
- *Main - Prints the description of a random number
- *Description: Program generates a random number
- *Then prints whether its:
- *positive, negative or zero
- *Return: 0(Success)
+ * main - Prints the description of a random number
+ * Description: Program generates a random number
+ * Return: 0(Success)
  */
 int main(void)
 {
