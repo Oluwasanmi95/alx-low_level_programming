@@ -5,7 +5,7 @@
 /**
  * main - Program sorts random generated numbers
  * Description: Prints description of number using if,else statements
- * Return 0(Success)
+ * Return: 0(Success)
  */
 int main(void)
 {
