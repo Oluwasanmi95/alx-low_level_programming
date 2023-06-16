@@ -14,7 +14,7 @@ int main(void)
 	for (i = 0; i < 26; i++)
 	{
 		putchar(a);
-		a++
+		a++;
 	}
 	for (i = 0; i < 26; i++)
 	{
