@@ -5,7 +5,7 @@
  * Description: Prototype: void print_alphabet(void);
  * Return: 0
  */
-int main(void)
+void print_alphabet(void)
 {
 	char letter;
 
@@ -14,5 +14,4 @@ int main(void)
 		_putchar(letter);
 	}
 	_putchar('\n');
-	return (0);
 }
