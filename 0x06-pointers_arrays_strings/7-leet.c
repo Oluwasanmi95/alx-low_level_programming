@@ -8,22 +8,22 @@
  */
 char *leet(char *str)
 {
-char *ptr = str;
-char *replacements = "aAeEoOtTlL";
-char *encoded = "4433007711";
+	char *ptr = str;
+	char *replacements = "aAeEoOtTlL";
+	char *encoded = "4433007711";
 
-while (*ptr != '\0')
-{
-int i;
-for (i = 0; replacements[i] != '\0'; i++)
-{
-if (*ptr == replacements[i] || *ptr == replacements[i] + 32)
-{
-*ptr = encoded[i];
-break;
-}
-}
-ptr++;
-}
-return (str);
+	while (*ptr != '\0')
+	{
+	int i;
+	for (i = 0; replacements[i] != '\0'; i++)
+	{
+	if (*ptr == replacements[i] || *ptr == replacements[i] + 32)
+	{
+	*ptr = encoded[i];
+	break;
+	}
+	}
+	ptr++;
+	}
+	return (str);
 }
