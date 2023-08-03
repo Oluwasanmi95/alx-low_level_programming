@@ -9,25 +9,25 @@
 void print_binary(unsigned long int n)
 {
 	int num_bits = sizeof(n) * 8;
-	unsigned long int mask = 1UL << (num_bits - 1);
-	int print_flag = 0;
+	unsigned long int temp = 1UL << (num_bits - 1);
+	int print = 0;
 
-	while (mask > 0)
+	while (temp > 0)
 	{
-		if ((n & mask) != 0)
+		if ((n & temp) != 0)
 		{
-			print_flag = 1;
+			print = 1;
 			_putchar('1');
 		}
-		else if (print_flag)
+		else if (print)
 		{
 			_putchar('0');
 		}
 
-	mask >>= 1;
+	temp >>= 1;
 	}
 
-	if (print_flag == 0)
+	if (print == 0)
 	{
 		_putchar('0');
 	}
