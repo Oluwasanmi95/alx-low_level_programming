@@ -104,6 +104,8 @@ int main(int ac, char **av)
 		exit(97);
 	}
 
-	copy_file(av[1], av[2]);
-	return (1);
+	num = copy_file(av[1], av[2]);
+	printf("-> %i)\n", num);
+
+	return (0);
 }
