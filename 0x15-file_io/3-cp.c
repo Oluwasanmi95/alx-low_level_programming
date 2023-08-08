@@ -104,12 +104,6 @@ int main(int ac, char **av)
 		exit(97);
 	}
 
-	num = copy_file(av[1], av[2]);
-
-	if (num != 1)
-		dprintf(STDERR_FILENO, "Error %d occured\n", errno);
-	else
-		dprintf(STDOUT_FILENO, "Copy Successful");
-
+	copy_file(av[1], av[2]);
 	return (1);
 }
